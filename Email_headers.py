@@ -113,7 +113,7 @@ def reciveing_part(sendersEmail, subject):
 def config_read():
     global loginuser, loginpassword
     config = configparser.ConfigParser()
-    config.read('example.ini')
+    config.read('config.ini')
     if "Email" in config:
         loginuser = config["Email"]["User"]
         loginpassword = config["Email"]["Password"]
